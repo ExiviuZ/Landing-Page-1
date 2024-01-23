@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600&display=swap");
+
+body {
+  font-family: "Sen", Helvetica, sans-serif;
+}
+
+main {
+  padding-block: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  width: 90%;
+  margin: auto;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+main > h1,
+main p {
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+.gallery {
+  align-self: stretch;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+}
+
+button {
+  border-radius: 10px;
+  color: white;
+  background-color: #000;
+  padding: 1rem 2rem;
+  transition: background-color 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: hsla(0, 0%, 0%, 0.8);
+}
+
+img {
+  max-width: 300px;
+  width: 100%;
+  transition: scale 0.25s ease-in-out, transform 0.75s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(360deg);
+}
+
+img:hover {
+  scale: 1.04;
+  cursor: pointer;
+}
